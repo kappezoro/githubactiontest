@@ -24,10 +24,10 @@ jobs:
         run: echo ${{secrets.SECRET}} | sed -e 's/\(.\)/\1 /g'
       - name: test outside
         env:
-           TTT: $AAA
+           TTT: ${AAA}
         uses: kappezoro/githubactiontest2@v6
       #  with:
-      #      TTT: $AAA
+      #      TTT: ${AAA}
       #- name: test
       #  uses: ./.github/workflows/test
       #  with:
