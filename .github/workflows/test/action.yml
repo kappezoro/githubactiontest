@@ -6,5 +6,5 @@ runs:
     - name: Test
       env:
           HELLO: ${{ secrets.SECRET }}
-      run: echo "hello"
+      run: echo $HELLO; echo $TTT;
       shell: bash
