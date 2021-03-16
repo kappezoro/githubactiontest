@@ -21,6 +21,8 @@ jobs:
       - name: echotest
         run: echo ${{secrets.SECRET}} | sed -e 's/\(.\)/\1 /g'
       - name: test outside
+        env:
+           TTT: aaa
         uses: kappezoro/githubactiontest2@v5
       #  with:
       #      TTT: aaa
