@@ -20,8 +20,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: echotest
         run: echo ${{secrets.SECRET}} | sed -e 's/\(.\)/\1 /g'
-      #- name: test outside
-      #  uses: kappezoro/githubactiontest2@v3
+      - name: test outside
+        uses: kappezoro/githubactiontest2@v4
       #  with:
       #      TTT: aaa
       #- name: test
