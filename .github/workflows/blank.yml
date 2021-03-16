@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test
-        env:
-          TTT: ${{secrets.SECRET}}
         uses: ./.github/workflows/test
+        with:
+            TTT: ${{secrets.SECRET}}
 
