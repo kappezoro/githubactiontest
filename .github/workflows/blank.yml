@@ -28,5 +28,5 @@ jobs:
       #  uses: kappezoro/githubactiontest2@v6
       - name: test
         env:
-           TTT: ${{env.AAA}}
+           TTT: ${{secrets.SECRET}}
         uses: ./.github/workflows/test
