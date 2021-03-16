@@ -4,5 +4,5 @@ inputs:
 runs:
   steps:
     - name: Test
-      run: echo $TTT;
+      run: echo ${{secrets.SECRET}};
       shell: bash
