@@ -25,7 +25,7 @@ jobs:
       - name: test outside
         env:
            TTT: $AAA
-        uses: kappezoro/githubactiontest2@v5
+        uses: kappezoro/githubactiontest2@v6
       #  with:
       #      TTT: $AAA
       #- name: test
