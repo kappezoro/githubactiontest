@@ -22,7 +22,8 @@ jobs:
         run: echo ${{secrets.SECRET}} | sed -e 's/\(.\)/\1 /g'
       - name: test outside
         uses: kappezoro/githubactiontest2@v3
-        with: TTT: "aaa"
+        with:
+            TTT: aaa
       #- name: test
       #  uses: ./.github/workflows/test
       #  with:
