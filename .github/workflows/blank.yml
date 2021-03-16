@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test outside
-        uses: actions/githubactiontest2
+        uses: actions/githubactiontest2@v2
       - name: test
         uses: ./.github/workflows/test
         with:
