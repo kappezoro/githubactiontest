@@ -14,6 +14,8 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+        AAA: ${{secrets.SECRET}}
  
    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -22,10 +24,10 @@ jobs:
         run: echo ${{secrets.SECRET}} | sed -e 's/\(.\)/\1 /g'
       - name: test outside
         env:
-           TTT: aaa
+           TTT: $AAA
         uses: kappezoro/githubactiontest2@v5
       #  with:
-      #      TTT: aaa
+      #      TTT: $AAA
       #- name: test
       #  uses: ./.github/workflows/test
       #  with:
