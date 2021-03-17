@@ -1,10 +1,10 @@
 inputs:
-  TTT_NAME:
+  TTT:
     required: true
     default: '1'
 runs:
   using: "composite"
   steps:
     - name: Test
-      run: echo $INPUT_TTT_NAME | sed -e 's/\(.\)/\1 /g'
+      run: echo $TTT | sed -e 's/\(.\)/\1 /g'
       shell: bash

@@ -31,4 +31,4 @@ jobs:
         #   TTT: ${{secrets.SECRET}}
         uses: ./.github/workflows/test
         with:
-            TTT_NAME: ${{secrets.SECRET}}
+            TTT: ${{secrets.SECRET}}
