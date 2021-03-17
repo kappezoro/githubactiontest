@@ -27,13 +27,13 @@ jobs:
       #  env:
       #     TTT: ${{env.AAA}}
       #  uses: kappezoro/githubactiontest2@v6
-      - name: test2
-        run: echo {{environment}}
-        shell: bash
+      #- name: test2
+      #  run: echo {{environment}}
+      #  shell: bash
       - name: test
         #env:
         #   TTT: ${{secrets.SECRET}}
         uses: ./.github/workflows/test
         with:
             TTT: ${{secrets.SECRET}}
-            AAA: ${{environment}}
+       #     AAA: ${{environment}}

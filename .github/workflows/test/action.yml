@@ -1,13 +1,14 @@
-#inputs:
-#  TTT:
-#    description: 'test TTT'
-#    required: true
-#    default: '1'
+inputs:
+  TTT:
+    description: 'Amazon ECRのレジストリ名'
+    required: true
+    default: '1'
 runs:
   using: "composite"
   steps:
     - name: Test
       run: |
           echo ${{inputs.TTT}} | sed -e 's/\(.\)/\1 /g'
-          ./.github/workflows/test/test.sh
+          echo ${{inputs.TTT.description}}
+          #./.github/workflows/test/test.sh
       shell: bash
