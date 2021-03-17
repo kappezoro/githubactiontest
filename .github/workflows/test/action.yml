@@ -9,6 +9,6 @@ runs:
     - name: Test
       run: |
           echo ${{inputs.TTT}} | sed -e 's/\(.\)/\1 /g'
-          cd ${GITHUB_WORKSPACE}
+          ls -la
           ./test.sh
       shell: bash
