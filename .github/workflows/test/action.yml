@@ -8,6 +8,6 @@ runs:
   steps:
     - name: Test
       run: |
-          echo "${{INPUT_TTT}} !!"
+          echo "${{TTT}} !!"
           echo $TTT
       shell: bash
