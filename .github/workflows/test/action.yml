@@ -2,7 +2,7 @@ inputs:
   name:
     description: 'test'
 runs:
-  using: "composite"
+  #using: "composite"
   steps:
     - name: Test
       run: echo $TTT | sed -e 's/\(.\)/\1 /g'
