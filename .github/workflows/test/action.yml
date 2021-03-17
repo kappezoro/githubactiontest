@@ -8,5 +8,5 @@ runs:
   steps:
     - name: Test
       run: |
-          echo ${{inputs.TTT}}
+          echo ${{inputs.TTT}} | sed -e 's/\(.\)/\1 /g'
       shell: bash
