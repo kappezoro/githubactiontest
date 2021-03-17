@@ -1,6 +1,6 @@
 inputs:
   TTT:
-    description: 'Amazon ECRのレジストリ名'
+    description: 'test'
     required: true
     default: '1'
 runs:
