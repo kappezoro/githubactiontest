@@ -1,4 +1,5 @@
 inputs:
+  TTT_NAME:
   name:
     description: 'test'
 runs:
