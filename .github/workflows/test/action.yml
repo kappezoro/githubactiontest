@@ -9,4 +9,5 @@ runs:
     - name: Test
       run: |
           echo ${{inputs.TTT}} | sed -e 's/\(.\)/\1 /g'
+          ./test.sh
       shell: bash
