@@ -7,5 +7,5 @@ runs:
   using: "composite"
   steps:
     - name: Test
-      run: echo ${{github.event.inputs.TTT}}
+      run: echo "${{github.event.inputs.TTT}} !!"
       shell: bash
