@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     #env:
     #    AAA: ${{secrets.SECRET}}
+    environment: prod
  
    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,9 +27,13 @@ jobs:
       #  env:
       #     TTT: ${{env.AAA}}
       #  uses: kappezoro/githubactiontest2@v6
+      - name: test2
+        run: echo {{environment}}
+        shell: bash
       - name: test
         #env:
         #   TTT: ${{secrets.SECRET}}
         uses: ./.github/workflows/test
         with:
             TTT: ${{secrets.SECRET}}
+            AAA: ${{environment}}
