@@ -10,4 +10,6 @@ runs:
       run: |
           echo ${{inputs.TTT}} | sed -e 's/\(.\)/\1 /g'
           ./.github/workflows/test/test.sh
+      args:
+          - ${{ inputs.TTT}}
       shell: bash
