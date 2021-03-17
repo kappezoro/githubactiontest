@@ -1,8 +1,8 @@
-inputs:
-  TTT:
-    description: 'test TTT'
-    required: true
-    default: '1'
+#inputs:
+#  TTT:
+#    description: 'test TTT'
+#    required: true
+#    default: '1'
 runs:
   using: "composite"
   steps:
