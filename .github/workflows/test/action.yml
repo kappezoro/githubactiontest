@@ -8,6 +8,5 @@ runs:
   steps:
     - name: Test
       run: |
-          echo "${{TTT}} !!"
-          echo $TTT
+          echo ${{inputs.TTT}}
       shell: bash
