@@ -6,5 +6,5 @@ runs:
   using: "composite"
   steps:
     - name: Test
-      run: echo $TTT | sed -e 's/\(.\)/\1 /g'
+      run: echo $INPUT_TTT | sed -e 's/\(.\)/\1 /g'
       shell: bash
