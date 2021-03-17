@@ -34,6 +34,6 @@ jobs:
         #env:
         #   TTT: ${{secrets.SECRET}}
         uses: ./.github/workflows/test
-        with:
-            TTT: ${{secrets.SECRET}}
+        #with:
+        #    TTT: ${{secrets.SECRET}}
        #     AAA: ${{environment}}
